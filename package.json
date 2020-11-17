@@ -1,0 +1,26 @@
+{
+  "name": "webpack_davetron_tut",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "config": {
+    "webpack_args": " --config webpack.config.js"
+  },
+  "scripts": {
+    "webpack": "webpack $npm_package_config_webpack_args",
+    "webpack:production": "webpack $npm_package_config_webpack_args --env=production",
+    "webpack:test": "webpack --config test/webpack.test.config.js",
+    "jest": "jest test/bundle.test.js",
+    "test": "yarn webpack:test && yarn jest"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.6.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.4.0"
+  },
+  "dependencies": {
+    "markdown": "^0.5.0"
+  }
+}
