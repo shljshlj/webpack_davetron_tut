@@ -1,12 +1,12 @@
----
-### webpack tutorial
+# webpack tutorial
 ###### webpack v4.43.0 | webpack-cli v3.3.12
 
----
+<br/>
+
 - This project is following __David Copeland__'s tutorial __[Webpack from Nothing](https://what-problem-does-it-solve.com/webpack/index.html)__
 - _App_: simple markdown previewer
 
----
+<br/>
 
 ```js
 // Install
