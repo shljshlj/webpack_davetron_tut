@@ -1,5 +1,7 @@
 const path = require('path');
 const glob = require('glob');
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.config.js');
 
 const testFiles = glob.sync('test/*.test.js').
   filter(function (element) {
@@ -8,11 +10,12 @@ const testFiles = glob.sync('test/*.test.js').
     return "./" + element;
   });
 
-module.exports = {
+module.exports = merge(common, {
   entry: testFiles, // relative to where we are running webpack <root dir> / (also, has to start with './')!
+  devtool: 'inline-source-map',
   output: {
-    path: path.resolve(__dirname, '.'), // relative to where the webpack configuration lives <test dir in this case>!
+    path: path.resolve(__dirname, '../test'), // relative to where the webpack configuration lives <config dir in this case>!
     filename: 'bundle.test.js'
   },
   mode: 'none',
-};
+});

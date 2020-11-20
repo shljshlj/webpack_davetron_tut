@@ -9,7 +9,7 @@
   "scripts": {
     "webpack": "webpack $npm_package_config_webpack_args",
     "webpack:production": "webpack $npm_package_config_webpack_args --env=production",
-    "webpack:test": "webpack --config test/webpack.test.config.js",
+    "webpack:test": "webpack $npm_package_config_webpack_args --env=test",
     "jest": "jest test/bundle.test.js",
     "test": "yarn webpack:test && yarn jest"
   },
