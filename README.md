@@ -33,5 +33,5 @@ yarn webpack:test
   - `/production/` _mini-css-extract-plugin_ extracts CSS into separate output files. It creates a CSS file per JS file which contains CSS. We want the browser to load CSS separately, so it can download both the __CSS and the JS in parallel__.
 
 - `publicPath` is the relative path of the resource to the context
-  - e.g. for ./css/admin/main.css the publicPath will be ../../
-  -  while for ./css/main.css the publicPath will be ../
+  - e.g. for _./css/admin/main.css_ the publicPath will be _../../_
+  -  while for _./css/main.css_ the publicPath will be _../_
