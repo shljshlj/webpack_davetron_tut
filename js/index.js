@@ -3,6 +3,8 @@ import markdownPreviewer from './markdownPreviewer';
 import 'tachyons';
 import '../css/styles.css';
 
+console.log('blue')
+
 window.onload = function () {
   document.getElementById('editor').addEventListener(
     'submit',

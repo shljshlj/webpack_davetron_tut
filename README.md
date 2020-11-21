@@ -39,3 +39,10 @@ yarn webpack:test
 - __Sourcemaps__
   - If a sourcemap file exists, browsers know to look at it when giving us a stack trace
   - The configuration option in webpack is called __devtool__
+
+- __Testing__
+  - We can use `--watch` flag for continuous testing:
+```js
+"webpack:test:server": "webpack $npm_package_config_webpack_args --env=test --watch",
+"jest:server": "jest test/bundle.test.js --watch"
+```

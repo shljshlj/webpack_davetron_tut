@@ -3,5 +3,12 @@ html {
 }
 
 h1 {
-  color: goldenrod;
+  color: darkblue;
+}
+
+body {
+  min-height: 100vh;
+  padding: 1px;
+  /* hack: add padding to avoid child's margin leaving the parent container */
+  background: linear-gradient(125deg, #f4d7de 0%, #cecfe7 100%);
 }
