@@ -42,7 +42,7 @@ yarn webpack:test
 
 - __Testing__
   - We can use `--watch` flag for continuous testing:
-```js
-"webpack:test:server": "webpack $npm_package_config_webpack_args --env=test --watch",
-"jest:server": "jest test/bundle.test.js --watch"
-```
+    ```js
+    "webpack:test:server": "webpack $npm_package_config_webpack_args --env=test --watch",
+    "jest:server": "jest test/bundle.test.js --watch"
+    ```
