@@ -1,7 +1,7 @@
 import { markdown } from 'markdown';
 
-const attachPreviewer = function ($document, sourceId, previewId) {
-  return function (event) {
+const attachPreviewer = ($document, sourceId, previewId) => {
+  return (event) => {
     const text = $document.getElementById(sourceId).value,
       preview = $document.getElementById(previewId);
 
