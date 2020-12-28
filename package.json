@@ -14,7 +14,8 @@
     "jest": "jest test/bundle.test.js",
     "test": "yarn webpack:test && yarn jest",
     "webpack:test:server": "webpack $npm_package_config_webpack_args --env=test --watch",
-    "jest:server": "jest test/bundle.test.js --watch"
+    "jest:server": "jest test/bundle.test.js --watch",
+    "check-env": "node -e 'console.log(process.env)' | grep npm"
   },
   "devDependencies": {
     "@babel/core": "^7.12.7",
